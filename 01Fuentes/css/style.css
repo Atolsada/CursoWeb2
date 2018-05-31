@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@font-face {font-family:"Permant"; /* <-Nombre que queramos, recomendable nombre de fuente a usar */
+                src: url("../assets/PermanentMarker-Regular.ttf")} /* link de donde está descargada */
+*, 
+*::after, *::before,
+*:after, *:before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+h1{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-style: italic; <- Esto está así para que se aplique el "Permant" */
+    font-family: Permant, cursive;  /* <-añadido fuente Permant descargada */
+    
+} /* las que van en comillas son por que tienen espacio */
+
+h2{
+    font-family: Pacifico, Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-family: Roboto, Verdana, sans-serif; /* font-family editado por nosotros + GoogleFont */
+}
