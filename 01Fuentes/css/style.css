@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.icono_ini{
+    background-color:blueviolet;
+}
+
 body{
     background-color: bisque;
 }
