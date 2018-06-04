@@ -69,10 +69,18 @@ div.wrapper{
     margin-left: 3rem;
     margin-top: 2rem;
 }
-
+section.sombras h2 {
+    text-shadow: 0.5rem 0.5rem 0.5rem;
+}
 section.sombras div{
     width: 10rem;
     height: 10rem;
     border: 1px solid;
     box-shadow: 1rem 1rem 0.5rem 0.5rem; /* horizontal - vertical - difuminar - tamaño sombra */
+    border-radius: 50%;
+}
+
+section.sombras img{
+    width: 100%;
+    border-radius: 50%;
 }
