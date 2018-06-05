@@ -17,6 +17,7 @@ section div.text-wrapper{
 
 section div.img-wrapper{
     width: 40%;
+    max-width: 100%;
     padding: 2rem;
     display: none;
 }
