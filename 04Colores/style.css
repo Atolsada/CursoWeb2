@@ -1,7 +1,7 @@
 section>div {
     width: 8rem;
     height: 8rem;
-    background-color: rgb(128, 252, 5);
+    background-color: rgb(128, 255, 0);
     /*  opacity: 0.5;  el opacity se hereda y además los hijos que heredan esa opacidad, lo máximo opaco será la opacidad dle padre, en este caso el 100% del morado será el 0.5 del padre*/
 }
 
@@ -14,4 +14,10 @@ section>div>div{
     /* background-color: rgba(140, 43, 230, 0.596);  transparencias */
     background-color: blueviolet;
     opacity: 0.65;
+}
+
+aside>div{
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(128, 252, 5, blueviolet)
 }
