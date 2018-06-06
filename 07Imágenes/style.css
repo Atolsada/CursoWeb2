@@ -18,9 +18,42 @@ img{
 
 section.dragones{ /* UN BLOQUE SIEMPRE OCUPA EL 100% DEL ESPACIO Y SI DIGO QUE OCUPE MES DA IGUAL, RESERVA EL 100% DEL ESPACIO */
     border: 1px solid; /* Ejemplo, para verlo hay que poner en comment section.dragones div{float: left; */                                                                      
-    width: 80%;
+    width: 80%; /* CUANDO 2ALGO" TIENE HIJOS Y FLOTAN, COLAPSAN */
+    overflow: auto; /* Para solucionar el colapso de imágenes */
+}
+
+Section.dragones::after{
+    content: ""; /* hay que poner content simepre auqnue no lleve nada */
+    display: block;
+    clear: both;
 }
 
 section.dragones div{
     float: left;
+}
+
+/* section.fondos{ SE SUSTITUYE POR EL SECTION.FONDOS::AFTER
+    background-image: url(./Dragon-PNG-Pic.png);
+    opacity: 0.5;  la letra también hereda la opacidad 
+}*/
+
+section.fondos{
+    position: relative; /* esto está puesto para que section.fondos::after funcione y no empiece desde 0.0 */
+}
+
+section.fondos::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "Estoy aquí...";
+    background-image: url(./Gold_Dragon.png);
+    opacity: 0.35;
+}
+
+section.fondos2{
+    background-color: darkgoldenrod; /* Esto se pone al inicio por si la imagen falla, el texto puede leerse */
+    background-image: url(./Gold_Dragon.png);
+    color: aliceblue;
 }
