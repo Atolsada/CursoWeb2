@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /*
 img{
    max-width: 100%;  /* --> width: 100% ocupa el 100% del monitor y pixela 
@@ -10,4 +14,13 @@ div{
 img{
     width: 100%;
     max-width: 100%; /* De esta forma se puede hacer un responsive por que se queda sin pixelar */
+}
+
+section.dragones{ /* UN BLOQUE SIEMPRE OCUPA EL 100% DEL ESPACIO Y SI DIGO QUE OCUPE MES DA IGUAL, RESERVA EL 100% DEL ESPACIO */
+    border: 1px solid; /* Ejemplo, para verlo hay que poner en comment section.dragones div{float: left; */                                                                      
+    width: 80%;
+}
+
+section.dragones div{
+    float: left;
 }
