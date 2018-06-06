@@ -66,6 +66,7 @@ section.fondos2{
 }
 
 section.fondos2 div{
+    border: 1px solid;
     width: 80rem;
     height: 80rem;
     background-image: url(./arena7.gif);
