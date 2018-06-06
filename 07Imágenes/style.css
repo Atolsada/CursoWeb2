@@ -1,0 +1,13 @@
+/*
+img{
+   max-width: 100%;  /* --> width: 100% ocupa el 100% del monitor y pixela 
+}                      --> max-width: 100%; nunca se hace más grande que el máx de la img pero no es responsive 
+*/
+
+div{
+    width: 20%;
+}
+img{
+    width: 100%;
+    max-width: 100%; /* De esta forma se puede hacer un responsive por que se queda sin pixelar */
+}
