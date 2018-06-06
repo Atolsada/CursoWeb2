@@ -52,8 +52,23 @@ section.fondos::after{
     opacity: 0.35;
 }
 
-section.fondos2{
-    background-color: darkgoldenrod; /* Esto se pone al inicio por si la imagen falla, el texto puede leerse */
+/*section.fondos2{
+    background-color: darkgoldenrod;  Esto se pone al inicio por si la imagen falla, el texto puede leerse 
     background-image: url(./Gold_Dragon.png);
     color: aliceblue;
+}*/
+
+section.fondos2{
+    padding: 1rem;
+    background-image: url(./Arena.jpg);
+    background-repeat: repeat-y;
+    color: black;
+}
+
+section.fondos2 div{
+    width: 80rem;
+    height: 80rem;
+    background-image: url(./arena7.gif);
+    background-repeat: no-repeat;
+    color: black;
 }
