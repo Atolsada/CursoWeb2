@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+header h1{
+    height: 30rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: dodgerblue;
+    background-image: url(./Walt_Disney_Pictures_1985_Print_Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* o cover */
+    background-position: center;
+}
+
+header span {
+    display: none; /* como si no existiera, no invisible */
+}
+
+.oculto{
+    display: none; /* con esto nos hacemos una clase de ocultar para usar en lo que queramos */
+}
