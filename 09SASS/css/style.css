@@ -34,7 +34,7 @@ body {
 }
 body header {
   width: 60%;
-  margin-left: auto;
+  margin-left: 30%;
   margin-right: auto;
 }
 body header h1 {
@@ -45,7 +45,19 @@ body header p {
   font-size: 1.5rem;
   margin-top: 0;
 }
+body header:hover {
+  background-color: aqua;
+}
+body p:hover {
+  background-color: #2e3b45;
+  color: crimson;
+}
 
+footer address p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: red;
+}
 footer > p {
   color: lawngreen;
 }

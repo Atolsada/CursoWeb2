@@ -36,7 +36,12 @@ body{
 //Este comentario es comentario SASS y no lo compila a CSS
 
 footer{
-    address{}
+    address{
+        p{margin-top: 0;
+        margin-bottom: 0;
+        color: red;
+        }
+    }
     >p{color: lawngreen;
     }
 }

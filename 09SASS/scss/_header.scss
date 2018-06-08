@@ -1,6 +1,24 @@
+$fondo: aqua; //esto son variables que podemos crear
+$fondo1: crimson;
+$fondo2: mix($fondo,$fondo1);
+
+$margen1: 20%;
+$margen2: 10%;
+$margen3: $margen1+$margen2;
+
 header{
     width: 60%;
-    margin-left: auto;
+    margin-left: $margen3;
     margin-right: auto;
     @import '_header2.scss';
+    &:hover{
+        background-color: aqua;
+    }
+}
+
+p{
+    &:hover{
+        background-color: darken($fondo2, 30);
+        color: crimson;
+    }
 }
