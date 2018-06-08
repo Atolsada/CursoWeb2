@@ -12,9 +12,12 @@ header p{
 /*  CSS
 
     SASS */
-
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 2rem;
+    padding: 2rem;
     background-color: bisque;
     header{
         width: 60%;
