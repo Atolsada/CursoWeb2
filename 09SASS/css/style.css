@@ -46,4 +46,8 @@ body header p {
   margin-top: 0;
 }
 
+footer > p {
+  color: lawngreen;
+}
+
 /*# sourceMappingURL=css/style.css.map */
