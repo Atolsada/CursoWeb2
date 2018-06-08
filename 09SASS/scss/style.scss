@@ -19,11 +19,18 @@ body{
     margin: 2rem;
     padding: 2rem;
     background-color: bisque;
-    header{
+    @import '_header.scss';
+    /* header{
         width: 60%;
         margin-left: auto;
         margin-right: auto;
-        h1{color: brown;}
-        p{font-size: 1.5rem;}
-    }
+        @import '_header2.scss'; 
+        h1{color: brown;
+    margin-bottom: 0.3rem;
 }
+        p{font-size: 1.5rem;
+        margin-top: 0;
+        }
+    }*/
+}
+//Este comentario es comentario SASS y no lo compila a CSS

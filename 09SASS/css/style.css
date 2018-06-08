@@ -19,6 +19,18 @@ body {
   margin: 2rem;
   padding: 2rem;
   background-color: bisque;
+  /* header{
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+          @import '_header2.scss'; 
+          h1{color: brown;
+      margin-bottom: 0.3rem;
+  }
+          p{font-size: 1.5rem;
+          margin-top: 0;
+          }
+      }*/
 }
 body header {
   width: 60%;
@@ -27,9 +39,11 @@ body header {
 }
 body header h1 {
   color: brown;
+  margin-bottom: 0.3rem;
 }
 body header p {
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=css/style.css.map */
