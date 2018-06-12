@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  overflow: auto;
+  /* Para que el main consiga altura y no colapse */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main section {
+  width: 75%;
+  float: left;
+  padding-right: 3rem;
+}
+main section h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main section div {
+  width: 50%;
+  float: left;
+  padding-left: 1rem;
+}
+
+aside {
+  width: 25%;
+  float: left;
+  padding-left: 3rem;
+}
+
+/*# sourceMappingURL=css/style.css.map */
