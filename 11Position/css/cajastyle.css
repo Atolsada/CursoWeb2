@@ -16,6 +16,8 @@ div {
   left: 50%;
   margin-top: -25%;
   margin-left: -20%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=css/cajastyle.css.map */
