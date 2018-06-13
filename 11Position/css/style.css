@@ -1,4 +1,12 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20%;
+}
+
 div {
   position: relative;
   /*  <-- + EXPLICACIÓN DEL ABSOLUTE */
@@ -18,6 +26,7 @@ div p {
 /* position:relative; los cambios de position siempre"generan una capa nueva"misma posición pero capa nueva [podemos moverlo con coordenadas relativas a su posición original en esa capa nueva por encima] */
 /* position:absolute; el elemento al que le damos absolute se traslada a otro plano pero no deja el espacio anterior reservado, así que es reocupado por el elemento que va acontinuación  
 primer elemento en su cadena de ancestros que no tenga posición estática + */
+/* position:fixed; mismas características que el absolute pero a la pantalla no al padre */
 .relative {
   position: relative;
   top: 5rem;
@@ -28,9 +37,13 @@ primer elemento en su cadena de ancestros que no tenga posición estática + */
 }
 
 .absolute {
-  position: absolute;
+  margin: 0%;
+  position: fixed;
+  /* <-- cambiado a fixed */
   left: 0%;
   bottom: 0%;
+  top: 0%;
+  right: 80%;
 }
 
 /*# sourceMappingURL=css/style.css.map */
