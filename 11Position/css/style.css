@@ -1,0 +1,36 @@
+@charset "UTF-8";
+div {
+  position: relative;
+  /*  <-- + EXPLICACIÓN DEL ABSOLUTE */
+  width: 50%;
+  background-color: salmon;
+  padding: 1rem;
+  /* para poder ver el div */
+  margin: 1rem;
+  /* para poder ver el div con una pequeña separación*/
+}
+div p {
+  padding: 2rem;
+  background-color: lightblue;
+}
+
+/* position:static; que todo se comporte normal, bloque, float, etc. [POR DEFECTO] */
+/* position:relative; los cambios de position siempre"generan una capa nueva"misma posición pero capa nueva [podemos moverlo con coordenadas relativas a su posición original en esa capa nueva por encima] */
+/* position:absolute; el elemento al que le damos absolute se traslada a otro plano pero no deja el espacio anterior reservado, así que es reocupado por el elemento que va acontinuación  
+primer elemento en su cadena de ancestros que no tenga posición estática + */
+.relative {
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+  right: 0%;
+  bottom: 0;
+  /* rem, %, pix, etc */
+}
+
+.absolute {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+
+/*# sourceMappingURL=css/style.css.map */
