@@ -18,8 +18,7 @@
 
 header{
     height: 100vh;
-    position: relative; /* para que sea un origen de coordenadas */
-    
+    position: relative; /* para que sea un origen de coordenadas */  
     div{
         position: absolute;
         width: 100%;
@@ -37,11 +36,9 @@ header{
         left: 0;
         height: 100%;
         background-color: black;
-        opacity: 0.5;
-        
+        opacity: 0.5;  
     }
 }
-
     h1{
         position: relative;
         clear: both;
@@ -63,12 +60,23 @@ nav{
     right: 0%;
     color: white;
     font-family: 'Lora', serif;
-
     ul{
         list-style: none;
         padding: 0; /* para quitar el borde sobrante [normalmente se quita en reset] */
-        li{
+        >li{
             display: inline-block;
+            position: relative;
+            &:hover>ul{
+                display: block;
+                position: absolute;
+                top: 1.3rem;
+                li{
+                    display: block;
+                }
+            }
+            ul{
+                display: none;
+            }
             a{
                 color: inherit;
                 text-decoration: none;
@@ -82,7 +90,6 @@ main{
     overflow: auto; /* Para que el main consiga altura y no colapse */
     margin-left: 10%;
     margin-right: 10%;
-
     section{ 
         width: 75%;
         float: left;

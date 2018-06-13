@@ -6,6 +6,7 @@
 header {
   height: 100vh;
   position: relative;
+  /* para que sea un origen de coordenadas */
 }
 header div {
   position: absolute;
@@ -44,8 +45,8 @@ header h1 {
 
 nav {
   /* width: 50%; al tener un float right como se reparte y llega hasta el final no es necesario el width, para ver lo que ocupa ponerlo con border 1px solid se ve el efecto en modo ventana y haciéndola más pequeña*/
-  float: right;
-  position: relative;
+  position: absolute;
+  right: 0%;
   color: white;
   font-family: "Lora", serif;
 }
@@ -54,10 +55,22 @@ nav ul {
   padding: 0;
   /* para quitar el borde sobrante [normalmente se quita en reset] */
 }
-nav ul li {
+nav ul > li {
   display: inline-block;
+  position: relative;
 }
-nav ul li a {
+nav ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 1.3rem;
+}
+nav ul > li:hover > ul li {
+  display: block;
+}
+nav ul > li ul {
+  display: none;
+}
+nav ul > li a {
   color: inherit;
   text-decoration: none;
   padding: 1.5rem 2rem;
