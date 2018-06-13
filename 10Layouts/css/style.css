@@ -5,6 +5,7 @@
 
 header {
   height: 100vh;
+  position: relative;
 }
 header div {
   position: absolute;
@@ -14,7 +15,7 @@ header div {
   background-repeat: no-repeat;
   background-size: cover;
 }
-header div::after {
+header div::before {
   content: "";
   /* Siempre hay que poner content aunque esté vacío */
   position: absolute;
@@ -25,23 +26,33 @@ header div::after {
   height: 100%;
   background-color: black;
   opacity: 0.5;
-  z-index: 10;
 }
 header h1 {
+  position: relative;
   clear: both;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 0vh;
+  /* poner vh es igual que % */
+  padding-bottom: 0vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  line-height: 100vh;
   font-family: "Abril Fatface", cursive;
   font-size: 2.4rem;
   color: white;
 }
 
 nav {
-  width: 50%;
+  /* width: 50%; al tener un float right como se reparte y llega hasta el final no es necesario el width, para ver lo que ocupa ponerlo con border 1px solid se ve el efecto en modo ventana y haciéndola más pequeña*/
   float: right;
+  position: relative;
+  color: white;
+  font-family: "Lora", serif;
 }
 nav ul {
   list-style: none;
+  padding: 0;
+  /* para quitar el borde sobrante [normalmente se quita en reset] */
 }
 nav ul li {
   display: inline-block;
@@ -66,6 +77,7 @@ main section {
 main section h2 {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: "Abril Fatface", cursive;
 }
 main section div {
   width: 50%;
@@ -82,6 +94,10 @@ aside {
   width: 25%;
   float: left;
   padding-left: 3rem;
+  font-family: "Lora", serif;
+}
+aside h2 {
+  font-family: "Abril Fatface", cursive;
 }
 
 footer {
