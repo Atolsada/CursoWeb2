@@ -14,8 +14,5 @@ div{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -25%;
-    margin-left: -20%;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%)
 }
