@@ -1,10 +1,24 @@
+@mixin reset($tipo: full) {
+    @if ($tipo==full) {
+        margin: 0;
+        padding: 0;
+    }
+    @if ($tipo==vert) {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
 *{
     box-sizing: border-box;
 }
 
 header{
     height: 100vh;
-    position: relative;
+    position: relative; /* para que sea un origen de coordenadas */
     
     div{
         position: absolute;
@@ -45,8 +59,8 @@ header{
 
 nav{
     /* width: 50%; al tener un float right como se reparte y llega hasta el final no es necesario el width, para ver lo que ocupa ponerlo con border 1px solid se ve el efecto en modo ventana y haciéndola más pequeña*/
-    float: right;
-    position: relative;
+    position: absolute;
+    right: 0%;
     color: white;
     font-family: 'Lora', serif;
 
