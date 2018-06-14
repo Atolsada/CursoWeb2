@@ -1,0 +1,134 @@
+@mixin reset($tipo: full) {
+    @if ($tipo==full) {
+        margin: 0;
+        padding: 0;
+    }
+    @if ($tipo==vert) {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    position: relative; /* para que sea un origen de coordenadas */  
+    div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/home-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before{
+        content: ""; /* Siempre hay que poner content aunque esté vacío */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;  
+    }
+}
+    h1{
+        position: relative;
+        clear: both;
+        text-align: center;
+        padding-top: 0vh; /* poner vh es igual que % */
+        padding-bottom: 0vh;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+        line-height: 100vh;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 2.4rem;
+        color: white;
+    }
+}
+
+nav{
+    /* width: 50%; al tener un float right como se reparte y llega hasta el final no es necesario el width, para ver lo que ocupa ponerlo con border 1px solid se ve el efecto en modo ventana y haciéndola más pequeña*/
+    position: absolute;
+    right: 0%;
+    color: white;
+    font-family: 'Lora', serif;
+    ul{
+        list-style: none;
+        padding: 0; /* para quitar el borde sobrante [normalmente se quita en reset] */
+        >li{
+            display: inline-block;
+            position: relative;
+            &:hover>ul{
+                display: block;
+                position: absolute;
+                top: 1.3rem;
+                li{
+                    display: block;
+                }
+            }
+            ul{
+                display: none;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+                padding: 1.5rem 2rem;
+            }
+        }
+    }
+}
+
+main{
+    overflow: auto; /* Para que el main consiga altura y no colapse */
+    margin-left: 10%;
+    margin-right: 10%;
+    section{ 
+        width: 75%;
+        float: left;
+        padding-right: 3rem;
+        h2{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: 'Abril Fatface', cursive;
+        }
+        div{
+            width: 50%;
+            float: left;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: 'Lora', serif;
+
+            p::nth-of-type(1){
+                margin-top: 0%;
+            }
+        }
+    }
+}
+aside{
+    width: 25%;
+    float: left;
+    padding-left: 3rem;
+    font-family: 'Lora', serif;
+    h2{
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid silver;
+    padding-top: 1.2rem;
+
+    p{
+        margin-top: 0;
+    }
+}
