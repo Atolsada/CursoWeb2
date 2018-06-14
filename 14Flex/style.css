@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+section{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: burlywood;
+}
+
+body{
+    display: flex; /* [ELEMENTOS FLEXIBLES (NO FLOATS) CON LOS QUE TIENE DENTRO] */ 
+    background-color: brown;
+}
+div{
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: salmon;
+}
