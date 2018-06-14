@@ -98,20 +98,6 @@ section {
   float: left;
   padding-right: 3rem;
 }
-section h2 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-section div {
-  width: 50%;
-  float: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-section div p:nth-of-type(1) {
-  margin-top: 0;
-}
-
 aside {
   padding-left: 3rem;
   width: 25%;
@@ -128,4 +114,4 @@ footer p {
   margin-top: 0;
 }
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=css/style_col.css.map */
