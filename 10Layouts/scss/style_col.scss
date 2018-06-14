@@ -109,7 +109,14 @@ section {
     padding-right: 3rem; 
 
     div {   
-
+        column-count: 2;
+        column-gap: 3rem; /* [Separación entre columnas] */
+        column-rule: 1px solid; /* [Línea entre el espacio de las columnas] */
+        border-bottom: 1px solid; /* para poner la línea en horizontal es con border */
+        
+        p:nth-of-type(1){
+            margin-top: 0;
+        }
     }
 }
 aside {

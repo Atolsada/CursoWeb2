@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -98,6 +99,19 @@ section {
   float: left;
   padding-right: 3rem;
 }
+section div {
+  column-count: 2;
+  column-gap: 3rem;
+  /* [Separación entre columnas] */
+  column-rule: 1px solid;
+  /* [Línea entre el espacio de las columnas] */
+  border-bottom: 1px solid;
+  /* para poner la línea en horizontal es con border */
+}
+section div p:nth-of-type(1) {
+  margin-top: 0;
+}
+
 aside {
   padding-left: 3rem;
   width: 25%;
