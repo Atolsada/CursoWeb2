@@ -102,10 +102,10 @@ main {
     margin-left: 10%;
     margin-right: 10%;
     font-family: 'Lora', serif;
+    display: flex;
 }
 section {
     width: 75%;
-    float: left;
     padding-right: 3rem; 
 
     h2 {
@@ -113,21 +113,25 @@ section {
         padding-right: 1rem;
     }
 
-    div {
+    div.wrapper{
+        display: flex;
+
+        div {
         width: 50%;
-        float: left;
         padding-left: 1rem;
         padding-right: 1rem; 
-
+        
         p:nth-of-type(1) {
-            margin-top: 0;
+        margin-top: 0;
+        }
         }
     }
+
+    
 }
 aside {
     padding-left: 3rem;
     width: 25%;
-    float: left;
 }
 
 footer {
