@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -7,8 +8,28 @@ body {
   color: bisque;
 }
 
-h1 {
+header {
+  /* para el menú hamburguesa */
+  display: flex;
+  justify-content: space-between;
+  align-items: 0;
+}
+header h1 {
   font-family: "Lobster", cursive;
+}
+header nav {
+  font-size: 2rem;
+}
+
+nav {
+  /* para quitar las caracteristicas de menu en todos los nav (la raya inferior y color azul típico)*/
+}
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (min-width: 480px) {
@@ -46,11 +67,33 @@ h1 {
   }
 
   .wrapper_colums {
-    /*  column-count: 2;
-     column-gap: 2rem; */
+    column-count: 2;
+    column-gap: 2rem;
     display: flex;
   }
+  .wrapper_colums .wrapper_item_flex {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .wrapper_colums .wrapper_item_flex p:nth-of-type(1) {
+    margin-top: 0;
+  }
 }
+nav.bottom-menu {
+  background-color: bisque;
+  color: brown;
+}
+nav.bottom-menu a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  display: block;
+}
+nav.bottom-menu a:hover {
+  background-color: bisque;
+  color: brown;
+}
+
 footer {
   border-top: 1px solid;
   margin-top: 2rem;

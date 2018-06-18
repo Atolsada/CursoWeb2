@@ -2,21 +2,45 @@
     box-sizing: border-box;
 }
 
+$color_main: bisque;
+
+$color_back: brown;
+
 body{
-    background-color: brown;
-    color: bisque;
+    background-color: $color_back;
+    color: $color_main;
     
 }
 
-h1{
+header{ /* para el menú hamburguesa */
+    display: flex;
+    justify-content: space-between;
+    align-items: 0;
+    
+    h1{
     font-family: 'Lobster', cursive;
+}
+
+    nav{
+        font-size: 2rem;
+    }
+}
+
+nav{ /* para quitar las caracteristicas de menu en todos los nav (la raya inferior y color azul típico)*/
+    ul{ 
+        list-style: none;    
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 @media screen and (min-width:480px){
 
     h1{
         font-size: 2.3rem;
-    }
+    }   
 
     .wrapper_flex{
         display: flex;
@@ -50,11 +74,36 @@ h1{
         color: crimson;
     }
     .wrapper_colums{
-       /*  column-count: 2;
-        column-gap: 2rem; */
+        column-count: 2;
+        column-gap: 2rem;
         display: flex;
+
+        .wrapper_item_flex{
+            width: 50%;
+            padding: 0 1rem;
+
+            p:nth-of-type(1){
+                margin-top: 0;
+            }
+        }
     }
     
+}
+
+nav.bottom-menu{
+    background-color: $color_main;
+    color: $color_back;
+    a{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        display: block;
+
+        &:hover {
+            background-color: $color_main;
+            color: $color_back
+        }
+    }
 }
 
 footer{
