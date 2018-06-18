@@ -18,6 +18,20 @@ h1{
         font-size: 2.3rem;
     }
 
+    .wrapper_flex{
+        display: flex;
+        section{
+            flex: 0 1 75%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        aside{
+            flex: 0 1 25%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
     body{
         background-color: aquamarine;
         color: darkblue;
@@ -35,18 +49,10 @@ h1{
         background-color: darksalmon;
         color: crimson;
     }
-    .wrapper_flex{
+    .wrapper_colums{
+       /*  column-count: 2;
+        column-gap: 2rem; */
         display: flex;
-        section{
-            flex: 0 1 75%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-        aside{
-            flex: 0 1 25%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
     }
     
 }
