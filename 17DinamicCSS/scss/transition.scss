@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+    color: maroon;
+    &:hover{
+        font-size: 3rem;
+    color:crimson;
+    }
+}
+

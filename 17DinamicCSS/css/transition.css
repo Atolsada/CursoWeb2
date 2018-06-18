@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  color: maroon;
+}
+h1:hover {
+  font-size: 3rem;
+  color: crimson;
+}
+
+/*# sourceMappingURL=css/transition.css.map */
