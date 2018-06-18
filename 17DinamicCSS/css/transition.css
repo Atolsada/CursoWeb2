@@ -1,14 +1,28 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
+}
+
+header {
+  border: 1px solid;
 }
 
 h1 {
   font-size: 2rem;
   color: maroon;
+  opacity: 0;
+  /* transition-property: font-size;
+  transition-duration: 1000ms;  van en milisegundos 
+  transition-delay: 1s;
+  transition-timing-function: cubic-bezier(.64,-0.63,.38,1.64) ;  linear - la curva de aceleración, constante, más rápido cada vez, etc.
+  Si son coordenadas son coordenadas de bezier */
+  transition: font-size 3s linear, color 1s ease;
+  /* en vez de fontsize ponemos all (y cualquier propiedad dentro del hover) para que funcione también  */
 }
 h1:hover {
   font-size: 3rem;
   color: crimson;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=css/transition.css.map */
