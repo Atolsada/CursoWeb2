@@ -6,12 +6,21 @@ body{
     margin-left: 2rem;
 }
 
+section{
+    margin-top: 2rem;
+}
+
 .rotate{
-    div:hover{
-        background-color: bisque;
-        
+    button:hover+div{
+        transform: rotate(45deg) /* deg son grados se pueden poner antes de transform, transform-origin(left,right,etc) para poner desde donde rota*/
+        /* background-color: bisque; */
     }
 }
+
+/* space -> descendiente
+> -> hijo
+~ -> hermano adyacente posterior (el hermano acontinuación)
++ -> hermano adyacente(linea de hermanos)*/
 
 /* Esta forma sería si quisieramos que al div también le quisieramos aplicarle cosas
 .rotate{
@@ -30,4 +39,26 @@ div{
 
 button{
     margin-bottom: 2rem;
+}
+
+.skew{
+    button:hover+div{
+        /* skew() - skewX() - skewY() */
+        transform: skew(-45deg, 20deg);
+    }
+}
+
+.scale{
+    button:hover+div{
+    /* cale() - scaleX() - scaleY() */
+    transform: scaleX(0.5);
+    }
+}
+
+.translate{
+    button:hover+div{
+    /* translate() - translateX() - stranslateY() */
+    transform: translate(20rem, -10rem);
+
+    }
 }
