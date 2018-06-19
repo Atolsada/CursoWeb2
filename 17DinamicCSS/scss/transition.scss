@@ -19,6 +19,7 @@ h1{
 
     transition: font-size 3s linear, color 1s ease;
     /* en vez de fontsize ponemos all (y cualquier propiedad dentro del hover) para que funcione también  */
+    /* Transition tiene que estar en el estado inicial, de momento en css solo conocemos hover */
     &:hover{
         font-size: 3rem;
         color:crimson;
