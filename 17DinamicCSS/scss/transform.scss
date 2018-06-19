@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 2rem;
+}
+
+.rotate{
+    div:hover{
+        background-color: bisque;
+        
+    }
+}
+
+/* Esta forma sería si quisieramos que al div también le quisieramos aplicarle cosas
+.rotate{
+    div{
+        &:hover{
+            background-color: bisque;
+        }
+    }
+} */
+
+div{
+    width: 10rem;
+    height: 10rem;
+    background-color: maroon;
+}
+
+button{
+    margin-bottom: 2rem;
+}
