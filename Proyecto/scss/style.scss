@@ -2,8 +2,11 @@
     box-sizing: border-box;
 }
 
+$color_main: bisque;
+/* $color_back: brown; */
+
 body{
-    background-color: bisque;
+   background-color: $color_main;
 }
 .navegador {
     ul {
@@ -37,14 +40,14 @@ header{
     background-size: cover;
     display: flex;
     h1{
-        position: relative;
+        /* position: relative; */
         clear: both;
         text-align: center;
         color: azure;
     }
 }
 main {
-    overflow: auto;
+    /* overflow: auto; */
     margin-left: 5%;
     margin-right: 5%;
 }
