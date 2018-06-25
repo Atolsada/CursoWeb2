@@ -1,3 +1,26 @@
 *{
     box-sizing: border-box;
 }
+
+body{
+    background-color: bisque;
+}
+
+main {
+    overflow: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer {
+    margin-top: 3rem;
+    border-top: 1px solid silver;
+    text-align: center;
+    padding-top: 2rem;
+    address{
+        margin-top: 0;
+    }
+    p {
+        margin-top: 0;
+    }
+}
