@@ -21,7 +21,7 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.8rem 1rem;
   text-decoration: none;
 }
 .navegador ul a:hover {
@@ -38,14 +38,14 @@ header {
   display: flex;
 }
 header h1 {
-  /* position: relative; */
+  position: relative;
   clear: both;
   text-align: center;
   color: azure;
 }
 
 main {
-  /* overflow: auto; */
+  overflow: auto;
   margin-left: 5%;
   margin-right: 5%;
 }
