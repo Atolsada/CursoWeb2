@@ -1,20 +1,16 @@
 {
-  "name": "proyecto",
+  "name": "10Layouts",
   "version": "1.0.0",
-  "description": "Proyecto Front",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo 'Saludos'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parallelshell \"npm run server\" \"npm run sass:watch\"",
+    "server": "http-server",
+    "sass": "sass scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "nodemon -e scss -x \"sass scss:css\""
   },
-  "keywords": [
-    "HTML",
-    "CSS",
-    "JS"
-  ],
-  "author": "Toni Tolsada",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.1.1"
-  }
+  "keywords": ["HTML", "CSS", "JS"],
+  "author": "toniTolsada",
+  "license": "ISC"
 }
