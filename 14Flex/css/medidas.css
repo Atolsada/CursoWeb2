@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-html{
+html {
+    background-color: aqua
     /* height: 100%; */ /* se aplica al viewport que tenemos de navegador (ya sea full, ventana, etc.) */
-    background-color: rgb(245, 158, 126);
 }
 
 body{
@@ -12,12 +12,10 @@ body{
     /* height: 100%; */ /* [COMMENT PARA QUE FUNCIONE VH DE HEIGHT EN DIV] */
 }
 
-section{
-    background-color: crimson;
-   /*  height: 100%; */ /* [COMMENT PARA QUE FUNCIONE VH DE HEIGHT EN DIV] */
+section {
     border: 1px solid;
     width: 100px;
-    height: 200px;
+    height: 200px; /*  height: 100%; */ /* [COMMENT PARA QUE FUNCIONE VH DE HEIGHT EN DIV] */
 }
 /* con Height hay que definir "la base" si no, puede pasar que la altura de 0, es 0.
 De hecho, como norma general no se da en % la medida ya que habría que darsela en 
@@ -25,11 +23,11 @@ este caso al section, body y html */
 
 /* ¡¡Los margin y los padding en % se calculan sobre el mismo ancho del padre, no el alto. aunque queramos el alto!! */
 
-div{
-    background-color: rgb(191, 250, 114);
+div {
+    background-color: salmon;
     border: 1px solid;
     width: 20%;
     height: 20%;/* vh unidad estandar que tiene definida el viewport así no hay que poner % en ancestros 
     Número de veces la unidad del viewport*/
-    margin:50%;
+    margin: 50%;
 }

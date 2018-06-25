@@ -4,8 +4,13 @@
 
 section{
     display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap; /* wrap cuando no tieneen sitio se bajan */
+    background-color: darkcyan;
+    flex-direction: row;
+    flex-wrap: wrap; /* wrap cuando no tienen sitio se bajan */
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    height: 190vh;
     background-color: burlywood;
 }
 
@@ -17,8 +22,21 @@ div{
     font-size: 3rem;
     padding: 1rem;
     margin: 0.5rem;
+    border-radius: 10%;
+    border: 1px solid;
     background-color: salmon;
 }
-div:nth-last-of-type(3){
+
+div:nth-of-type(1) {
+    order: 4;
+}
+div:nth-of-type(2) {
+    order:3;   
+}
+div:nth-of-type(3) {
     font-size: 5rem;
+    order: 1;
+}
+div:nth-of-type(4) {
+    order: 2;
 }
