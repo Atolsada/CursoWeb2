@@ -1,76 +1,88 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
 
-/* $color_back: brown; */
-body {
-  background-color: bisque;
+body, h1, h2, h3, figure, ul, li {
+  margin: 0;
+  padding: 0;
 }
 
-.navegador ul {
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*MediaQuery 0 */
+.main_wrapper {
+  /* creado para no petar el body de cosas, cuantas menos tenga mejor y se lo aplicamos en class a lo que queramos */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+  /* Para que ocupen el 100 de la pantalla */
+}
+
+body {
+  background-color: #ececec;
+  /*width: 95%;
+  margin-left: auto;  los margin auto funcionan si tienen width si no no hace nada 
+  margin-right: auto;*/
+}
+
+header {
+  display: flex;
+  /*Menú hamburguesa*/
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: crimson;
+}
+header .navegador ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: midnightblue;
 }
-.navegador ul li {
+header .navegador ul li {
   float: left;
 }
-.navegador ul li a {
+header .navegador ul li a {
   display: block;
   color: white;
   text-align: center;
   padding: 0.8rem 1rem;
   text-decoration: none;
 }
-.navegador ul a:hover {
+header .navegador ul a:hover {
   background-color: crimson;
 }
 
-header {
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  background-image: url(../img/NoruegaWall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
+@media screen and (min-width: 650px) {
+  .main_wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-header h1 {
-  position: relative;
-  clear: both;
-  text-align: center;
-  color: azure;
+@media screen and (min-width: 1000px) {
+  .main_wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    /* para que no aumente más por que por ejemplo no se puede leer bien en pantalla gigante */
+  }
 }
+/* ----------------------------- */
 
-main {
-  overflow: auto;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
-section {
-  width: 100%;
-  float: left;
-  padding-right: 3rem;
-}
-section h2 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-footer {
-  margin-top: 3rem;
-  border-top: 1px solid silver;
-  text-align: center;
-  padding-top: 2rem;
-}
-footer address {
-  margin-top: 0;
-}
-footer p {
-  margin-top: 0;
-}
-
-/*# sourceMappingURL=css/style.css.map */

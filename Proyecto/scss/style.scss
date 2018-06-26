@@ -1,76 +1,93 @@
 *{
     box-sizing: border-box;
 }
+body, h1, h2, h3, figure, ul, li{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
 
-$color_main: bisque;
-/* $color_back: brown; */
+/*MediaQuery 0 */
 
+.main_wrapper{ /* creado para no petar el body de cosas, cuantas menos tenga mejor y se lo aplicamos en class a lo que queramos */
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 100%; /* Para que ocupen el 100 de la pantalla */
+
+}
+
+$color_main: rgb(236, 236, 236);
 body{
    background-color: $color_main;
-}
-.navegador {
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: midnightblue;
-        li {
-            float: left;
-            a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 0.8rem 1rem;
-            text-decoration: none;
-            }
-        }
-        a:hover {
-        background-color: crimson;
-        }
-    }
+   /*width: 95%;
+   margin-left: auto;  los margin auto funcionan si tienen width si no no hace nada 
+   margin-right: auto;*/
+
 }
 
 header{
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background-image: url(../img/NoruegaWall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+    display: flex;  /*Menú hamburguesa*/ 
+    justify-content: space-between;
+    align-items: center;
     h1{
-        position: relative;
-        clear: both;
+        margin: 0.5rem;
+        padding: 0.5rem;
         text-align: center;
-        color: azure;
+        font-size: 4rem;
+        color: crimson;
     }
+    .navegador {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: midnightblue;
+            li {
+                float: left;
+                a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 0.8rem 1rem;
+                text-decoration: none;
+                }
+            }
+            a:hover {
+            background-color: crimson;
+            }
+        }
+    }
+    
+    
 }
-main {
-    overflow: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+@media screen and (min-width: 650px){
+    .main_wrapper{ 
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-section {
-    width: 100%;
-    float: left;
-    padding-right: 3rem; 
-    h2 {
-        padding-left: 1rem;
-        padding-right: 1rem;
+@media screen and (min-width: 1000px){
+    .main_wrapper{ 
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px; /* para que no aumente más por que por ejemplo no se puede leer bien en pantalla gigante */
     }
 }
 
-footer {
-    margin-top: 3rem;
-    border-top: 1px solid silver;
-    text-align: center;
-    padding-top: 2rem;
-    address{
-        margin-top: 0;
-    }
-    p {
-        margin-top: 0;
-    }
-}
+
+
+
+
+/* ----------------------------- */
