@@ -44,6 +44,9 @@ img {
 article .imgnorua, article .imgnorub {
   padding: left;
 }
+article .imgnoreco {
+  max-width: 75%;
+}
 
 header {
   display: flex;
