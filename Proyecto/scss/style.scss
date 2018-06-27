@@ -50,51 +50,84 @@ article{
 }
 
 header{
-    display: flex;  /*Menú hamburguesa - pero lo veo igual todo el rato*/ 
-    justify-content: space-between;
-    align-items: center;
-    h1{
-        margin: 0.5rem;
-        padding: 0.5rem;
-        text-align: left;
-        font-size: 4rem;
-        color: crimson;
+    .navegador{
+        visibility: hidden;
     }
-    .navegador {
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: midnightblue;
-            li {
-                float: left;
-                a{
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 0.8rem 1rem;
-                text-decoration: none;
-                }
-                a:hover {
-                    background-color: crimson;
+    .hamburguesa{
+
+    }
+}
+
+footer{
+    .navfooter{
+        visibility: hidden;
+        margin-top: 1rem;
+        text-align: center;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: midnightblue;
+                li {
+                    float: left;
+                    a{
+                    display: block;
+                    color: white;
+                    padding: 0.8rem 1rem;
+                    text-decoration: none;
                     }
-            }   
-        }
+                    a:hover {
+                        background-color: crimson;
+                        }
+                }   
+            }
     }   
 }
 
+
 /*MediaQuery 1 */
-@media screen and (min-width: 380px){
+@media screen and (min-width: 435px){
     .main_wrapper{ 
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    img{
-        max-width: 100%;
-        display:block;
-        margin:auto;
+    header{
+        display: flex;  /*Menú hamburguesa - pero lo veo igual todo el rato*/ 
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            margin: 0.5rem;
+            padding: 0.5rem;
+            text-align: left;
+            font-size: 4rem;
+            color: crimson;
+        }
+        .navegador {
+            visibility: visible;
+            margin-bottom: 1rem;
+            text-align: center;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: midnightblue;
+                li {
+                    float: left;
+                    a{
+                    display: block;
+                    color: white;
+                    padding: 0.8rem 1rem;
+                    text-decoration: none;
+                    }
+                    a:hover {
+                        background-color: crimson;
+                        }
+                }   
+            }
+        }   
     }
 
 }
