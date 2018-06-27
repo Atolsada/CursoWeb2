@@ -22,8 +22,8 @@ nav a {
 }
 
 img {
-  width: 100%;
-  /* Para que ocupen el 100 de la pantalla */
+  /*width: 100%;  Para que ocupen el 100 de la pantalla */
+  max-width: 100%;
 }
 
 body {
@@ -85,4 +85,4 @@ header .navegador ul a:hover {
 }
 /* ----------------------------- */
 
-
+/*# sourceMappingURL=css/style.css.map */

@@ -20,8 +20,8 @@ nav{
     margin-right: auto;
 }
 img{
-    width: 100%; /* Para que ocupen el 100 de la pantalla */
-
+    /*width: 100%;  Para que ocupen el 100 de la pantalla */
+    max-width: 100%;
 }
 
 $color_main: rgb(236, 236, 236);
