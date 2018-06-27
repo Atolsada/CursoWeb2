@@ -39,10 +39,7 @@ img {
   margin: auto;
 }
 
-article .imgnorua {
-  padding: left;
-}
-article .imgnorub {
+article .imgnorua, article .imgnorub {
   padding: left;
 }
 
@@ -76,7 +73,7 @@ header .navegador ul li a {
   padding: 0.8rem 1rem;
   text-decoration: none;
 }
-header .navegador ul a:hover {
+header .navegador ul li a:hover {
   background-color: crimson;
 }
 

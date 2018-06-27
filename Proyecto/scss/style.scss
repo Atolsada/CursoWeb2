@@ -41,10 +41,7 @@ img{
 }
 
 article{
-    .imgnorua{
-        padding: left;
-    }
-    .imgnorub{
+    .imgnorua, .imgnorub{
         padding: left;
     }
 }
@@ -76,10 +73,10 @@ header{
                 padding: 0.8rem 1rem;
                 text-decoration: none;
                 }
-            }
-            a:hover {
-            background-color: crimson;
-            }
+                a:hover {
+                    background-color: crimson;
+                    }
+            }   
         }
     }
     
