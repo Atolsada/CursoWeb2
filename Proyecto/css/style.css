@@ -21,16 +21,29 @@ nav a {
   margin-right: auto;
 }
 
-img {
-  /*width: 100%;  Para que ocupen el 100 de la pantalla */
-  max-width: 100%;
-}
-
 body {
   background-color: #ececec;
   /*width: 95%;
   margin-left: auto;  los margin auto funcionan si tienen width si no no hace nada 
   margin-right: auto;*/
+}
+
+h1, h2 {
+  margin: 0.5rem;
+}
+
+img {
+  /*width: 100%;  Para que ocupen el 100 de la pantalla */
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+article .imgnorua {
+  padding: left;
+}
+article .imgnorub {
+  padding: left;
 }
 
 header {
@@ -42,7 +55,7 @@ header {
 header h1 {
   margin: 0.5rem;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
   font-size: 4rem;
   color: crimson;
 }
@@ -67,14 +80,20 @@ header .navegador ul a:hover {
   background-color: crimson;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 380px) {
   .main_wrapper {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 850px) {
   .main_wrapper {
     width: 60%;
     margin-left: auto;
