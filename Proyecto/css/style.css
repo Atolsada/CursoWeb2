@@ -14,7 +14,7 @@ nav a {
 }
 
 /*MediaQuery 0 */
-.main_wrapper {
+.noru_wrapper {
   /* creado para no petar el body de cosas, cuantas menos tenga mejor y se lo aplicamos en class a lo que queramos */
   width: 95%;
   margin-left: auto;
@@ -25,7 +25,9 @@ body {
   background-color: #ececec;
   /*width: 95%;
   margin-left: auto;  los margin auto funcionan si tienen width si no no hace nada 
-  margin-right: auto;*/
+  margin-right: auto;
+  **Está colocado en el noru_wrapper
+  */
 }
 
 h1, h2 {
