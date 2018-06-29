@@ -32,6 +32,7 @@ body{
 }
 h1, h2{
     margin: 0.5rem;
+    color: crimson;
 }
 
 img{
@@ -43,7 +44,7 @@ img{
 .hamburguesa{
     max-width: 50px;
     max-height: 50px;
-    float: left;
+    float: right;
 }
 article{
     .imgnorua, .imgnorub{
@@ -82,55 +83,9 @@ article{
         }
 
 /*MediaQuery 1 */
-@media screen and (min-width: 435px){
+@media screen and (min-width: 435px){}
     
-    header{
-        display: flex;  /*Menú hamburguesa - pero lo veo igual todo el rato*/ 
-        justify-content: space-between;
-        align-items: center;
-        
-        .navegador {
-            visibility: visible;
-            margin-bottom: 1rem;
-            text-align: center;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: midnightblue;
-                li {
-                    float: left;
-                    a{
-                    display: block;
-                    color: white;
-                    padding: 0.8rem 1rem;
-                    text-decoration: none;
-                    }
-                    a:hover {
-                        background-color: crimson;
-                        }
-                }   
-            }
-        }   
-    }
-
-}
 
 
 /*MediaQuery 2 */
-@media screen and (min-width: 850px){
-    .main_wrapper{ 
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 800px; /* para que no aumente más por que por ejemplo no se puede leer bien en pantalla gigante */
-    }
-
-}
-
-
-
-
-
-/* ----------------------------- */
+@media screen and (min-width: 850px){}
