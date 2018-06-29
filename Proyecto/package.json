@@ -11,6 +11,6 @@
     "sass:watch": "nodemon -e scss -x \"sass scss:css\""
   },
   "keywords": ["HTML", "CSS", "JS"],
-  "author": "toniTolsada",
+  "author": "toni",
   "license": "ISC"
 }

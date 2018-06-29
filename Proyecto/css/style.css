@@ -41,6 +41,12 @@ img {
   margin: auto;
 }
 
+.hamburguesa {
+  max-width: 50px;
+  max-height: 50px;
+  float: left;
+}
+
 article .imgnorua, article .imgnorub {
   padding: left;
 }
@@ -48,54 +54,42 @@ article .imgnoreco {
   max-width: 75%;
 }
 
-header .navegador {
-  visibility: hidden;
+#topmenu {
+  display: none;
 }
-footer .navfooter {
-  visibility: hidden;
+
+#botmenu {
+  visibility: visible;
   margin-top: 1rem;
   text-align: center;
 }
-footer .navfooter ul {
+#botmenu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: midnightblue;
 }
-footer .navfooter ul li {
+#botmenu ul li {
   float: left;
 }
-footer .navfooter ul li a {
+#botmenu ul li a {
   display: block;
   color: white;
   padding: 0.8rem 1rem;
   text-decoration: none;
 }
-footer .navfooter ul li a:hover {
+#botmenu ul li a:hover {
   background-color: crimson;
 }
 
 /*MediaQuery 1 */
 @media screen and (min-width: 435px) {
-  .main_wrapper {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   header {
     display: flex;
     /*Menú hamburguesa - pero lo veo igual todo el rato*/
     justify-content: space-between;
     align-items: center;
-  }
-  header h1 {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-align: left;
-    font-size: 4rem;
-    color: crimson;
   }
   header .navegador {
     visibility: visible;
@@ -134,4 +128,4 @@ footer .navfooter ul li a:hover {
 }
 /* ----------------------------- */
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=style.css.map */

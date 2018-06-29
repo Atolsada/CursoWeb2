@@ -40,6 +40,11 @@ img{
     display:block;
     margin:auto;
 }
+.hamburguesa{
+    max-width: 50px;
+    max-height: 50px;
+    float: left;
+}
 article{
     .imgnorua, .imgnorub{
         padding: left;
@@ -48,62 +53,42 @@ article{
         max-width: 75%;
     }
 }
-
-header{
-    .navegador{
-        visibility: hidden;
-    }
-    .hamburguesa{
-
-    }
+#topmenu{
+    display: none;
 }
-
-footer{
-    .navfooter{
-        visibility: hidden;
-        margin-top: 1rem;
-        text-align: center;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: midnightblue;
-                li {
-                    float: left;
-                    a{
-                    display: block;
-                    color: white;
-                    padding: 0.8rem 1rem;
-                    text-decoration: none;
-                    }
-                    a:hover {
-                        background-color: crimson;
-                        }
-                }   
+#botmenu{
+    visibility: visible;
+    margin-top: 1rem;
+    text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: midnightblue;
+            li {
+                float: left;
+                a{
+                display: block;
+                color: white;
+                padding: 0.8rem 1rem;
+                text-decoration: none;
+                }
+                a:hover {
+                    background-color: crimson;
+                }
+                }
             }
-    }   
-}
-
+        }
 
 /*MediaQuery 1 */
 @media screen and (min-width: 435px){
-    .main_wrapper{ 
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
     header{
         display: flex;  /*Menú hamburguesa - pero lo veo igual todo el rato*/ 
         justify-content: space-between;
         align-items: center;
-        h1{
-            margin: 0.5rem;
-            padding: 0.5rem;
-            text-align: left;
-            font-size: 4rem;
-            color: crimson;
-        }
+        
         .navegador {
             visibility: visible;
             margin-bottom: 1rem;
