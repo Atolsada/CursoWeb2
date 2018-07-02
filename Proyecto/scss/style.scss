@@ -51,7 +51,7 @@ article{
         padding: left;
     }
     .imgnoreco{
-        max-width: 75%;
+        max-width: 100%;
     }
 }
 #topmenu{
@@ -85,11 +85,50 @@ article{
 /*MediaQuery 1 */
 @media screen and (min-width: 435px){
 
+#topmenu{
+    visibility: visible;
+    margin-top: 1rem;
+    text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: midnightblue;
+            li {
+                float: left;
+                a{
+                display: block;
+                color: white;
+                padding: 0.8rem 1rem;
+                text-decoration: none;
+                }
+                a:hover {
+                    background-color: crimson;
+                }
+                }
+            }
+        }
+
+#botmenu{
+    display: none;
+    }
+
+.hamburguesa{
+    display: none;
+    }
 
 }
 
 
 /*MediaQuery 2 */
 @media screen and (min-width: 850px){
-
+article{
+    .imgnorua, .imgnorub{
+        padding: left;
+    }
+    .imgnoreco{
+        max-width: 75%;
+    }
+    }
 }
