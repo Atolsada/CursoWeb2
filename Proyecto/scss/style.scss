@@ -86,7 +86,7 @@ article{
 @media screen and (min-width: 525px){
 
 #topmenu{
-    visibility: visible;
+    display: block; // <-display block, no visibility: visible
     margin-top: 1rem;
     text-align: center;
         ul {
