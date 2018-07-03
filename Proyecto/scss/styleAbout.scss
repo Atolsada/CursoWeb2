@@ -46,14 +46,7 @@ img{
     max-height: 50px;
     float: right;
 }
-article{
-    .imgnorua, .imgnorub{
-        padding: left;
-    }
-    .imgnoreco{
-        max-width: 100%;
-    }
-}
+
 #topmenu{
     display: none;
 }
@@ -116,11 +109,24 @@ article{
 .hamburguesa{
     display: none;
     }
+
+article{
+    .imgwall{
+        border: 5px solid red;
+        max-width: 90%;
+    }
+}
+
 }
 
 
 
 /*MediaQuery 2 */
 @media screen and (min-width: 850px){
-
+article{
+    .imgwall{
+        border: 5px solid black;
+        max-width: 90%;
+    }
+}
 }

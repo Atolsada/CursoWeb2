@@ -48,13 +48,6 @@ img {
   float: right;
 }
 
-article .imgnorua, article .imgnorub {
-  padding: left;
-}
-article .imgnoreco {
-  max-width: 100%;
-}
-
 #topmenu {
   display: none;
 }
@@ -118,7 +111,18 @@ article .imgnoreco {
   .hamburguesa {
     display: none;
   }
+
+  article .imgwall {
+    border: 5px solid red;
+    max-width: 90%;
+  }
 }
 /*MediaQuery 2 */
+@media screen and (min-width: 850px) {
+  article .imgwall {
+    border: 5px solid black;
+    max-width: 90%;
+  }
+}
 
 /*# sourceMappingURL=styleAbout.css.map */
