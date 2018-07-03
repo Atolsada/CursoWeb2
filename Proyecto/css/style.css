@@ -32,6 +32,7 @@ body {
 
 h1, h2 {
   margin: 0.5rem;
+  color: crimson;
 }
 
 img {
@@ -41,97 +42,91 @@ img {
   margin: auto;
 }
 
+.hamburguesa {
+  max-width: 50px;
+  max-height: 50px;
+  float: right;
+}
+
 article .imgnorua, article .imgnorub {
   padding: left;
 }
 article .imgnoreco {
-  max-width: 75%;
+  max-width: 100%;
 }
 
-header .navegador {
-  visibility: hidden;
+#topmenu {
+  display: none;
 }
-footer .navfooter {
-  visibility: hidden;
+
+#botmenu {
+  visibility: visible;
   margin-top: 1rem;
   text-align: center;
 }
-footer .navfooter ul {
+#botmenu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: midnightblue;
 }
-footer .navfooter ul li {
+#botmenu ul li {
   float: left;
 }
-footer .navfooter ul li a {
+#botmenu ul li a {
   display: block;
   color: white;
   padding: 0.8rem 1rem;
   text-decoration: none;
 }
-footer .navfooter ul li a:hover {
+#botmenu ul li a:hover {
   background-color: crimson;
 }
 
 /*MediaQuery 1 */
-@media screen and (min-width: 435px) {
-  .main_wrapper {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  header {
-    display: flex;
-    /*Menú hamburguesa - pero lo veo igual todo el rato*/
-    justify-content: space-between;
-    align-items: center;
-  }
-  header h1 {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-align: left;
-    font-size: 4rem;
-    color: crimson;
-  }
-  header .navegador {
+@media screen and (min-width: 525px) {
+  #topmenu {
     visibility: visible;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: center;
   }
-  header .navegador ul {
+  #topmenu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: midnightblue;
   }
-  header .navegador ul li {
+  #topmenu ul li {
     float: left;
   }
-  header .navegador ul li a {
+  #topmenu ul li a {
     display: block;
     color: white;
     padding: 0.8rem 1rem;
     text-decoration: none;
   }
-  header .navegador ul li a:hover {
+  #topmenu ul li a:hover {
     background-color: crimson;
+  }
+
+  #botmenu {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: none;
   }
 }
 /*MediaQuery 2 */
 @media screen and (min-width: 850px) {
-  .main_wrapper {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    /* para que no aumente más por que por ejemplo no se puede leer bien en pantalla gigante */
+  article .imgnorua, article .imgnorub {
+    padding: left;
+  }
+  article .imgnoreco {
+    max-width: 75%;
   }
 }
-/* ----------------------------- */
 
 /*# sourceMappingURL=css/style.css.map */

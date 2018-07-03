@@ -32,6 +32,7 @@ body{
 }
 h1, h2{
     margin: 0.5rem;
+    color: crimson;
 }
 
 img{
@@ -40,94 +41,81 @@ img{
     display:block;
     margin:auto;
 }
+.hamburguesa{
+    max-width: 50px;
+    max-height: 50px;
+    float: right;
+}
 article{
     .imgnorua, .imgnorub{
         padding: left;
     }
     .imgnoreco{
-        max-width: 75%;
+        max-width: 100%;
     }
 }
-
-header{
-    .navegador{
-        visibility: hidden;
-    }
-    .hamburguesa{
-
-    }
+#topmenu{
+    display: none;
 }
-
-footer{
-    .navfooter{
-        visibility: hidden;
-        margin-top: 1rem;
-        text-align: center;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: midnightblue;
-                li {
-                    float: left;
-                    a{
-                    display: block;
-                    color: white;
-                    padding: 0.8rem 1rem;
-                    text-decoration: none;
-                    }
-                    a:hover {
-                        background-color: crimson;
-                        }
-                }   
+#botmenu{
+    visibility: visible;
+    margin-top: 1rem;
+    text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: midnightblue;
+            li {
+                float: left;
+                a{
+                display: block;
+                color: white;
+                padding: 0.8rem 1rem;
+                text-decoration: none;
+                }
+                a:hover {
+                    background-color: crimson;
+                }
+                }
             }
-    }   
-}
-
+        }
 
 /*MediaQuery 1 */
-@media screen and (min-width: 435px){
-    .main_wrapper{ 
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header{
-        display: flex;  /*Menú hamburguesa - pero lo veo igual todo el rato*/ 
-        justify-content: space-between;
-        align-items: center;
-        h1{
-            margin: 0.5rem;
-            padding: 0.5rem;
-            text-align: left;
-            font-size: 4rem;
-            color: crimson;
-        }
-        .navegador {
-            visibility: visible;
-            margin-bottom: 1rem;
-            text-align: center;
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: midnightblue;
-                li {
-                    float: left;
-                    a{
-                    display: block;
-                    color: white;
-                    padding: 0.8rem 1rem;
-                    text-decoration: none;
-                    }
-                    a:hover {
-                        background-color: crimson;
-                        }
-                }   
+@media screen and (min-width: 525px){
+
+#topmenu{
+    visibility: visible;
+    margin-top: 1rem;
+    text-align: center;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: midnightblue;
+            li {
+                float: left;
+                a{
+                display: block;
+                color: white;
+                padding: 0.8rem 1rem;
+                text-decoration: none;
+                }
+                a:hover {
+                    background-color: crimson;
+                }
+                }
             }
-        }   
+        }
+
+#botmenu{
+    display: none;
+    }
+
+.hamburguesa{
+    display: none;
     }
 
 }
@@ -135,17 +123,12 @@ footer{
 
 /*MediaQuery 2 */
 @media screen and (min-width: 850px){
-    .main_wrapper{ 
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 800px; /* para que no aumente más por que por ejemplo no se puede leer bien en pantalla gigante */
+article{
+    .imgnorua, .imgnorub{
+        padding: left;
     }
-
+    .imgnoreco{
+        max-width: 75%;
+    }
+    }
 }
-
-
-
-
-
-/* ----------------------------- */
