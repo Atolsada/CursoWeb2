@@ -14,6 +14,13 @@ nav a {
 }
 
 /*MediaQuery 0 */
+.noru_wrapper {
+  /* creado para no petar el body de cosas, cuantas menos tenga mejor y se lo aplicamos en class a lo que queramos */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #ececec;
   /*width: 95%;
@@ -26,6 +33,13 @@ body {
 h1, h2 {
   margin: 0.5rem;
   color: crimson;
+}
+
+img {
+  /*width: 100%;  Para que ocupen el 100 de la pantalla */
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .hamburguesa {
@@ -66,7 +80,7 @@ h1, h2 {
 /*MediaQuery 1 */
 @media screen and (min-width: 525px) {
   #topmenu {
-    visibility: visible;
+    display: block;
     margin-top: 1rem;
     text-align: center;
   }
@@ -97,7 +111,18 @@ h1, h2 {
   .hamburguesa {
     display: none;
   }
+
+  article .imgwall {
+    border: 5px solid red;
+    max-width: 90%;
+  }
 }
 /*MediaQuery 2 */
+@media screen and (min-width: 850px) {
+  article .imgwall {
+    border: 5px solid black;
+    max-width: 90%;
+  }
+}
 
-/*# sourceMappingURL=css/styleAbout.css.map */
+/*# sourceMappingURL=styleAbout.css.map */

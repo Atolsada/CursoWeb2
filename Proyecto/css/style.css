@@ -87,7 +87,7 @@ article .imgnoreco {
 /*MediaQuery 1 */
 @media screen and (min-width: 525px) {
   #topmenu {
-    visibility: visible;
+    display: block;
     margin-top: 1rem;
     text-align: center;
   }
@@ -129,4 +129,4 @@ article .imgnoreco {
   }
 }
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=style.css.map */
